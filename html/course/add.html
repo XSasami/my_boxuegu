@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
     <!--外联样式-->
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/html/common/linkStyle.html') ?>
 </head>
+
 <body>
-    
+
     <!-- 侧边栏 -->
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/html/common/aside.html') ?>
     <!-- 主体 -->
@@ -45,8 +47,7 @@
         </div>
     </div>
 
-    <script src="../../lib/jquery/jquery.min.js"></script>
-    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../../js/common.js"></script>
+    <script src="/lib/requirejs/require-2.3.3.js" data-main="/js/common/main.js"></script>
 </body>
+
 </html>
