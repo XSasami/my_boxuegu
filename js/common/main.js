@@ -31,7 +31,7 @@ require.config({
         // 依赖于jQuery
         jquery: 'lib/jquery/jquery.min',
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
-        jquery_form: 'jquery-form/jquery.form',
+        jquery_form: 'lib/jquery-form/jquery.form',
     },
 
     // 配置普通模块
