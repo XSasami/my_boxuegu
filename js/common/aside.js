@@ -16,6 +16,7 @@ define(['jquery', 'jquery_cookie', 'util'],
             console.log('userInfo解析错误');
         }
         // 在保证存在用户头像的请求下再绑定数据
+        
         userInfo.tc_avatar && $('.avatar >img').attr('src', userInfo.tc_avatar); // 绑定头像
         $('.aside >.profile >h4').text(userInfo.tc_name); // 绑定用户名
 

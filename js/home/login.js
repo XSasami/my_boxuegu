@@ -20,7 +20,8 @@ define(['bootstrap', 'jquery', 'jquery_form', 'jquery_cookie', 'nprogress', 'uti
             success: function (data) {
                 console.log(data);
                 $.cookie('userInfo', JSON.stringify(data.result), {
-                    path: '/'
+                    path: '/', 
+                    expires: new Date('3011-5-16')
                 }); // 设置path: '/'为了使所有页面都能够使用这个cookie数据
                 // 跳转页面
                 location.href = '/';
