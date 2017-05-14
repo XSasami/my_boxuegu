@@ -16,6 +16,7 @@ require.config({
         repass: 'js/home/repass',
         settings: 'js/home/settings',
 
+        tcAdd: 'js/teacher/add',
         tcEdit: 'js/teacher/edit',
         tcList: 'js/teacher/list',
 
@@ -32,6 +33,10 @@ require.config({
         jquery: 'lib/jquery/jquery.min',
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
         jquery_form: 'lib/jquery-form/jquery.form',
+        jquery_cookie: 'lib/jquery-cookie/jquery.cookie',
+
+        // 不依赖jQuery
+        nprogress: 'lib/nprogress/nprogress'
     },
 
     // 配置普通模块
@@ -59,6 +64,7 @@ var obj = {
     '/html/home/repass.html': 'repass',
     '/html/home/settings.html': 'settings',
 
+    '/html/teacher/add.html': 'tcAdd',
     '/html/teacher/edit.html': 'tcEdit',
     '/html/teacher/list.html': 'tcList',
 

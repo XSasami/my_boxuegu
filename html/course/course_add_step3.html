@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
     <!--外联样式-->
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/html/common/linkStyle.html') ?>
 </head>
+
 <body>
-    
+
     <!-- 侧边栏 -->
     <?php include($_SERVER['DOCUMENT_ROOT'] . '/html/common/aside.html') ?>
     <!-- 主体 -->
@@ -37,20 +39,17 @@
                     <ul class="forwards list-unstyled">
                         <li>
                             <a href="./course_add_step1.html" class="done">
-                            <b class="fa fa-check"></b>
-                            基本信息
+                                <b class="fa fa-check"></b> 基本信息
                             </a>
                         </li>
                         <li>
                             <a href="./course_add_step2.html" class="done">
-                            <b class="fa fa-check"></b>
-                            课程图片
+                                <b class="fa fa-check"></b> 课程图片
                             </a>
                         </li>
                         <li>
                             <a href="./course_add_step3.html" class="active">
-                            <b>3</b>
-                            课时管理
+                                <b>3</b> 课时管理
                             </a>
                         </li>
                     </ul>
@@ -60,8 +59,7 @@
                         <div class="title">
                             <h5>课时管理 <small>LESSON MANAGE</small></h5>
                             <a src="javascript:;" data-toggle="modal" data-target="#lesson" class="btn btn-success btn-sm pull-right">
-                                <i class="fa fa-plus"></i>
-                                课时
+                                <i class="fa fa-plus"></i> 课时
                             </a>
                         </div>
                         <div class="lessons">
@@ -164,19 +162,16 @@
                         <div class="form-group form-inline">
                             <label for="" class="col-xs-2 control-label">时长</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control input-sm small">
-                                分
-                                <input type="text" class="form-control input-sm small">
-                                秒
-                                 <p class="help-block">时长必须为整数。</p>
+                                <input type="text" class="form-control input-sm small"> 分
+                                <input type="text" class="form-control input-sm small"> 秒
+                                <p class="help-block">时长必须为整数。</p>
                             </div>
                         </div>
                         <div class="form-group form-inline">
                             <label for="" class="col-xs-2 control-label">建议学习时长</label>
                             <div class="col-xs-8">
-                                <input type="text" class="form-control input-sm small">
-                                小时
-                                 <p class="help-block">（如未设置，则默认学习时长为视频时长3倍取整。）</p>
+                                <input type="text" class="form-control input-sm small"> 小时
+                                <p class="help-block">（如未设置，则默认学习时长为视频时长3倍取整。）</p>
                             </div>
                         </div>
                     </form>
@@ -188,7 +183,10 @@
             </div>
         </div>
     </div>
+    <!--loading-->
+    <?php include($_SERVER['DOCUMENT_ROOT'] . '/html/common/loading.html') ?>
 
     <script src="/lib/requirejs/require-2.3.3.js" data-main="/js/common/main.js"></script>
 </body>
+
 </html>
