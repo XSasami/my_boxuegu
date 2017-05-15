@@ -12,6 +12,15 @@ define(['jquery'],
                 }).on('ajaxStop', function () {
                     $('.overlay').hiden();
                 })
+            },
+            getSearchID: function(searchID) {
+                var searchObj = {}, temp;
+                var searchArr = location.search.slice(1).split('&');
+                for(var i = 0; i < searchArr.length; i++){
+                    temp = searchArr[i].split('=');
+                    searchObj[temp[0]] = temp[1];
+                }
+                return searchID==null? searchObj: searchObj[searchID];
             }
         }
     })
