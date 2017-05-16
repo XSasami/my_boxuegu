@@ -21,6 +21,6 @@ define(['jquery'],
                     searchObj[temp[0]] = temp[1];
                 }
                 return searchID==null? searchObj: searchObj[searchID];
-            }
+            },
         }
     })

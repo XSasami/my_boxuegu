@@ -1,4 +1,6 @@
 define(['jquery'],function($){
+
+    // 点击退出按钮时，发送ajax请求，跳到登录页
     $('#logout').on('click', function(){
         $.ajax({
             type: 'post',
