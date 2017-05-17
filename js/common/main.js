@@ -34,6 +34,10 @@ require.config({
         bootstrap: 'lib/bootstrap/js/bootstrap.min',
         jquery_form: 'lib/jquery-form/jquery.form',
         jquery_cookie: 'lib/jquery-cookie/jquery.cookie',
+        jquery_region: 'lib/jquery-region/jquery.region',
+        bootstrap_datepicker: 'lib/bootstrap-datepicker/js/bootstrap-datepicker.min',
+        bootstrap_datepicker_CN: 'lib/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+        jquery_uploadify: 'lib/uploadify/jquery.uploadify.min',
 
         // 不依赖jQuery
         nprogress: 'lib/nprogress/nprogress',
@@ -45,7 +49,13 @@ require.config({
         // bootstrap依赖于jq
         bootstrap: {
             deps: ['jquery']
-        }
+        },
+        bootstrap_datepicker_CN: {
+            deps: ['jquery', 'bootstrap_datepicker']
+        },
+        jquery_uploadify: {
+            deps: ['jquery']
+        },
     }
 });
 
